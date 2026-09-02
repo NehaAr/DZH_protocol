@@ -2,8 +2,8 @@
 
 **A hybrid DuckDB + Zarr ingestion protocol for heterogeneous bioinformatics data.**
 
-DZH-Protocol converts a mixed set of input files — tabular metadata,
-GWAS summary statistics, HDF5 matrices, VCFs, etc. — into a single
+DZH-Protocol converts a mixed set of input files tabular metadata,
+GWAS summary statistics, HDF5 matrices, VCFs, etc. into a single
 queryable store:
 
 - **Light, relational data** (metadata, lookup tables, small tabular
