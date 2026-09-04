@@ -4,9 +4,8 @@ graft tests
 
 
 include authors.rst
-include CHANGELOG.rst
-include CONTRIBUTING.rst
+include changelog.md
 include LICENSE
-include README.rst
+include README.md
 
 global-exclude *.py[cod] __pycache__/* *.so *.dylib
