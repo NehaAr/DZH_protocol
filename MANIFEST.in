@@ -1,0 +1,12 @@
+graft docs
+graft src/DZH_protocol
+graft tests
+
+
+include authors.rst
+include CHANGELOG.rst
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
+
+global-exclude *.py[cod] __pycache__/* *.so *.dylib
