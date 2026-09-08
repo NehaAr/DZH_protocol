@@ -21,7 +21,8 @@ loading multi-GB files into memory wholesale.
 ## Install
 
 ```bash
-pip install dzh-protocol
+git clone https://github.com/NehaAr/DZH_protocol
+pip install .
 ```
 
 ## Quickstart
