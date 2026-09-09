@@ -17,11 +17,11 @@ commit_args = ""
 
 # --- Update this to your package's __init__.py path ---
 [[tool.bumpversion.files]]
-filename = "DZH_protocol/__init__.py"
+filename = "src/dzh_protocol/__init__.py"
 search = "__version__ = \"{current_version}\""
 replace = "__version__ = \"{new_version}\""
 
-# --- Keeps pyproject.toml's own version field in sync ---
+# --- Keeps pyproject. toml's own version field in sync ---
 [[tool.bumpversion.files]]
 filename = "pyproject.toml"
 search = "version = \"{current_version}\""
