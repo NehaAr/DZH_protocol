@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dzh-protocol"
-version = "0.2.0"
+version = "0.1.0"
 description = "Hybrid DuckDB + Zarr ingestion protocol for heterogeneous bioinformatics data"
 readme = "README.md"
 license = {text = "MIT"}
