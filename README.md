@@ -35,7 +35,7 @@ from dzh_protocol import (
     register_zarr_pointer, get_array, checksum_file, verify_conversion,
 )
 
-con = duckdb.connect("project.duckdb")
+con = duckdb.connect("your_file.duckdb")
 
 # Stage 1: classify
 result = classify_file("manifest.tsv")
@@ -67,29 +67,7 @@ dzh convert /path/to/raw_files --output study.duckdb
 dzh list --db study.duckdb
 ```
 
-## Real-world example: FinnGen GWAS summary statistics
 
-DZH-Protocol has been validated against real, multi-gigabyte genomic
-data — five FinnGen summary-statistics files (I9_CVD_HARD, hard
-cardiovascular disease phenotype) totaling **21,327,062 SNPs** across
-~2.3GB of gzipped TSV:
-
-```bash
-dzh convert raw_sumstats/ --output cvd_finngen.duckdb
-```
-```
-[tabular ] CVD_part_01_tsv.gz  (tabular extension '.tsv', under size threshold)
-[tabular ] CVD_part_02_tsv.gz  (tabular extension '.tsv', under size threshold)
-[tabular ] CVD_part_03_tsv.gz  (tabular extension '.tsv', under size threshold)
-[tabular ] CVD_part_04_tsv.gz  (tabular extension '.tsv', under size threshold)
-[tabular ] CVD_part_05_tsv.gz  (tabular extension '.tsv', under size threshold)
-
-Done: 5 tabular tables ingested, 0 files flagged for array encoding, 2 skipped.
-```
-
-Row counts after ingestion match an independent hand-written DuckDB
-verification exactly (21,327,062 total), confirming lossless ingestion
-of real research data — not just synthetic test arrays.
 
 ## Protocol stages
 
