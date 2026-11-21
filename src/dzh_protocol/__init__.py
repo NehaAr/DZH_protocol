@@ -22,7 +22,7 @@ from .link import register_zarr_pointer, init_pointer_table, load_pointer
 from .validate import checksum_file, verify_conversion
 from .retrieve import get_array, list_arrays
 
-__version__ = "0.2.0"
+__version__ = "0.1.0"
 
 __all__ = [
     "classify_file",
